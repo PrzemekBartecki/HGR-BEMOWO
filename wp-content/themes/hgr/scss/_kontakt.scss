@@ -1,0 +1,82 @@
+.flexContact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  div.adressContact {
+    p {
+      margin: 26px 0;
+      }
+    }
+  }
+
+.txtPosition{
+  vertical-align: middle;
+}
+
+.hrLine{
+  width: 100%;
+}
+
+strong{
+  color:$mainColor;
+  line-height: 26px;
+}
+
+.wpcf7-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  input{
+    border: 1px solid #e0e0e0;
+    width:90%;
+    height:50px;
+    font-size: 16px;
+    margin-bottom: 27px;
+  }
+
+  p:nth-child(2) {
+    flex-grow: 1;
+    }
+
+  p:nth-child(3) {
+    flex-grow: 1;
+    align-self: flex-end;
+  }
+  p:nth-child(4) {
+   flex-basis: 100%;
+    textarea{
+      width:95%;
+      @media only screen and (max-width:807px){
+        width:90%;
+      }
+      height:167px;
+      font-size: 16px;
+      border: 1px solid #e0e0e0;
+      &:focus{
+        border-color: $mainColor;
+      }
+    }
+  }
+  input:focus{
+    border-color: $mainColor;
+  }
+
+  input[type="submit"]{
+      background-color: $mainColor;
+      color:#fff;
+      font-size: 18px;
+      font-family: 'Museo 500', serif;
+      padding: 10px 47px;
+      cursor:pointer;
+      outline: 0;
+      box-shadow: none;
+      margin: 50px 0;
+  }
+}
+
+a:focus, a, button, input[type="submit"] {
+  outline: 0;
+}
+

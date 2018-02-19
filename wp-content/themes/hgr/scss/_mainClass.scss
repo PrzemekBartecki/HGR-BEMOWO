@@ -1,0 +1,151 @@
+.container{
+  max-width: 1024px;
+  width:100%;
+  margin:0 auto;
+}
+.titleSize{
+  font-size: 24px;
+  color: $mainColor;
+  display: block;
+  margin:10px 0;
+}
+
+.btn{
+  background-color: $mainColor;
+  font-size: 18px;
+  font-family: 'Museo 500', serif;
+  padding: 10px 40px;
+}
+.btn--news{
+  color:#fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 37px 0 69px 0;
+}
+
+.margin1{
+  margin: $margin 0;
+}
+.margin1a{
+ margin: -$margin 0;
+}
+
+.margin2{
+  margin-bottom: $margin;
+}
+
+.margin5{
+  margin: $margin/3 0;
+}
+
+.sectionPicture{
+  max-width:100%;
+  height:490px;
+  @media only screen and (max-width:800px){
+	height: 45vh;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .sectionPicture--size{
+	font-size: 100px;
+	font-family: 'Museo 500', serif;
+	text-transform: uppercase;
+	color:#fff;
+	text-align: center;
+	text-shadow: -9px -9px 70px rgba(#000, 0.75);
+	@media only screen and (max-width: 490px){
+	  font-size: 69px;
+	}
+	@media only screen and (max-width: 310px){
+	  font-size: 55px;
+	}
+  }
+}
+.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.normal {
+  li {
+	margin: 6px 0 6px 30px;
+	a{
+	  color: $txtColor;
+	}
+	&::before {
+	  content: "\26AB";
+	  color: $mainColor;
+	  padding-right: 20px;
+	}
+	& > ul > li::before {
+		content: "\26AA";
+		color: $mainColor;
+		padding-right: 20px;
+	  }
+	}
+  }
+
+.thePostThum{
+  margin-top: 77px;
+  max-height: 50vh;
+  @media only screen and (max-width:750px){
+	margin-top: 100px;
+	max-width: 50%;
+  }
+}
+
+.readSpace{
+  margin: 0 25px;
+  @media only screen and (max-width:780px){
+	margin: 60px 25px;
+  }
+  li a {
+	color:$txtColor;
+	text-decoration: underline;
+  }
+}
+
+.blockMenu{
+  background-color: $mainColor;
+  width:100%;
+  height:85px;
+  position: relative;
+  top: -82px;
+  }
+
+section.navPost{
+  display:flex;
+  justify-content: space-around;
+  margin: 15px 0px;
+  @media only screen and (max-width:900px){
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  a{
+	display: inline-block;
+	width:100%;
+	background-color: $mainColor;
+	margin: 5px;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 700;
+  }
+}
+
+.emptySite{
+  min-height: calc(100vh - 723px);
+  margin-bottom: 10px;
+}
+
+.emptyPost{
+  min-height: calc(100vh - 704px);
+  margin-bottom: 10px;
+}
