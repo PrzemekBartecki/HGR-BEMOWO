@@ -1,5 +1,5 @@
 # HGR-BEMOWO
-Website created for the client. http://hgr-bemowo.net/
+Website created for the client. -http://hgr-bemowo.net/- new adress http://hgrbemowo.wola.zhp.pl/
 
 ## Authors :
 *graphic design- Marta Stachowicz
